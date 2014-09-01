@@ -1,0 +1,57 @@
+# Jelly plugin.yml - required for loading in Bukkit
+#
+# use /version Jelly to display version
+#
+name: Jelly
+version: 1.0.0
+author: Fjodor
+
+main: nl.Jelly.Jelly
+database: false
+
+#
+# all commands in this plugin 
+#
+commands:
+#  pos: 
+#    description: Displays your position or teleports you to another.
+#    permission: jelly.pos
+#    usage: /pos or /pos <x,y,z>
+
+  ignite:
+    description: Set a player on fire.
+    permission: jelly.ignite
+    usage: /ignite <player> <seconds>
+
+  sign:
+    description: get a list of lift signs
+    permission: jelly.sign
+    usage: /sign <player>
+     
+  rules:
+     description: Displays the Rules.
+     permission: jelly.rules
+     usage: /rules
+
+# permission definitions for this plugin
+# true = permission will be true by default
+# false = permission is false by default
+# op = permission will be true if the player is op
+# not op = permission is true if player is not op
+# 
+# 
+permissions:
+   jelly.*:
+      description: Gives access to all Jelly commands
+      children:
+      #  jelly.pos: true
+        jelly.ignite: true
+        jelly.sign: true
+        jelly.rules: true
+    
+           
+          
+
+ 
+              
+   

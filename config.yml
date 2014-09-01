@@ -1,0 +1,6 @@
+# default config.yml
+message: Welcome to JellyCraft Elevator Plugin !
+rules:
+ - Respect the Leader
+ - Obey the Leader
+ - Work hard
