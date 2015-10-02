@@ -1,9 +1,10 @@
-package nl.Jelly;
+package io.github.fjodor;
 
 import java.util.logging.Logger;
 
 import org.bukkit.block.Sign;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.SignChangeEvent;
@@ -63,7 +64,7 @@ public class BlockListener implements Listener
 		
 	}
 	
-	@EventHandler
+	@EventHandler (priority = EventPriority.LOWEST)
 	public void onBlockBreak(BlockBreakEvent e)
 	{
 		Sign sign = Util.getSignState(e.getBlock());

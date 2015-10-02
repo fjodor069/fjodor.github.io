@@ -1,4 +1,4 @@
-package nl.Jelly;
+package io.github.fjodor;
 
 import java.util.HashMap;
 import java.util.Map;

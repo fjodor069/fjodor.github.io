@@ -1,4 +1,4 @@
-package nl.Jelly;
+package io.github.fjodor;
 
 import org.bukkit.Location;
 import org.bukkit.command.Command;
